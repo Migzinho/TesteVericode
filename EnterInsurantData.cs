@@ -15,17 +15,17 @@ class EnterInsurantData
             driver.Navigate().GoToUrl("https://sampleapp.tricentis.com/101/app.php");
 
             // Preenche o formulário
-            driver.FindElement(By.Id("firstname")).SendKeys("John");
-            driver.FindElement(By.Id("lastname")).SendKeys("Doe");
+            driver.FindElement(By.Id("firstname")).SendKeys("Emidio");
+            driver.FindElement(By.Id("lastname")).SendKeys("Mignozzetti");
             driver.FindElement(By.Id("birthdate")).SendKeys("01/01/1990");
             driver.FindElement(By.Id("gendermale")).Click();
-            driver.FindElement(By.Id("streetaddress")).SendKeys("123 Elm Street");
+            driver.FindElement(By.Id("streetaddress")).SendKeys("Rua General Bittencout");
             new SelectElement(driver.FindElement(By.Id("country"))).SelectByValue("Brazil");
-            driver.FindElement(By.Id("zipcode")).SendKeys("12345");
-            driver.FindElement(By.Id("city")).SendKeys("Springfield");
+            driver.FindElement(By.Id("zipcode")).SendKeys("06016040");
+            driver.FindElement(By.Id("city")).SendKeys("Osasco");
             new SelectElement(driver.FindElement(By.Id("occupation"))).SelectByValue("Employee");
             driver.FindElement(By.Id("speeding")).Click(); // Seleciona um hobby
-            driver.FindElement(By.Id("website")).SendKeys("http://example.com");
+            driver.FindElement(By.Id("website")).SendKeys("https://github.com/Migzinho/TesteVericode/");
 
             // Submete o formulário
             driver.FindElement(By.Id("nextenterproductdata")).Click();
